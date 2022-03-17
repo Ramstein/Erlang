@@ -130,57 +130,82 @@ defmodule Todos do
 
     IO.puts("5+4 = #{5 + 4}")
     IO.puts("5-4 = #{5 - 4}")
-    IO.puts("5*4 = #{5 * 4}")
-    IO.puts("5/4 = #{5 / 4}")
-    IO.puts("5 div 4 = #{div(5, 4)}")
-    IO.puts("5 rem 4 = #{rem(5, 4)}")
+    # IO.puts("5*4 = #{5 * 4}")
+    # IO.puts("5/4 = #{5 / 4}")
+    # IO.puts("5 div 4 = #{div(5, 4)}")
+    # IO.puts("5 rem 4 = #{rem(5, 4)}")
 
-    # comparing just value not datatype
-    IO.puts("4 == 4.0 #{4 == 4.0}")
-    # comparing value and datatype both
-    IO.puts("4 === 4.0 #{4 === 4.0}")
-    # comparing just value not datatype
-    IO.puts("4 != 4.0 #{4 != 4.0}")
-    # comapring value and datatype both
-    IO.puts("4 !== 4.0 #{4 !== 4.0}")
+    # # comparing just value not datatype
+    # IO.puts("4 == 4.0 #{4 == 4.0}")
+    # # comparing value and datatype both
+    # IO.puts("4 === 4.0 #{4 === 4.0}")
+    # # comparing just value not datatype
+    # IO.puts("4 != 4.0 #{4 != 4.0}")
+    # # comapring value and datatype both
+    # IO.puts("4 !== 4.0 #{4 !== 4.0}")
 
-    IO.puts("5 < 4.0 #{5 < 4.0}")
+    # IO.puts("5 < 4.0 #{5 < 4.0}")
 
-    age = 16
-    IO.puts("Vote and Drive: #{age >= 16 and age >= 18}")
-    IO.puts("Vote or Drive: #{age >= 16 or age >= 18}")
+    # age = 16
+    # IO.puts("Vote and Drive: #{age >= 16 and age >= 18}")
+    # IO.puts("Vote or Drive: #{age >= 16 or age >= 18}")
 
-    if age >= 18 do
-      IO.puts("You can vote and drive")
-    else
-      IO.puts("You can't vote and drive")
-    end
+    # if age >= 18 do
+    #   IO.puts("You can vote and drive")
+    # else
+    #   IO.puts("You can't vote and drive")
+    # end
 
-    unless age === 18 do
-      IO.puts("You can't vote and drive")
-    else
-      IO.puts("You can vote and drive")
-    end
+    # unless age === 18 do
+    #   IO.puts("You can't vote and drive")
+    # else
+    #   IO.puts("You can vote and drive")
+    # end
 
-    cond do
-      age >= 18 -> IO.puts("You can vote")
-      age >= 16 -> IO.puts("You can drive")
-      age >= 14 -> IO.puts("You can wait")
-      true -> IO.puts("You can't do anything,  default")
-    end
+    # cond do
+    #   age >= 18 -> IO.puts("You can vote")
+    #   age >= 16 -> IO.puts("You can drive")
+    #   age >= 14 -> IO.puts("You can wait")
+    #   true -> IO.puts("You can't do anything,  default")
+    # end
 
-    case 2 do
-      1 -> IO.puts("One")
-      2 -> IO.puts("Two")
-      _ -> IO.puts("Default")
-    end
-    IO.puts("Ternary: #{if age >= 18, do: "You can vote and drive", else: "You can't vote and drive"}")
+    # case 2 do
+    #   1 -> IO.puts("One")
+    #   2 -> IO.puts("Two")
+    #   _ -> IO.puts("Default")
+    # end
+    # IO.puts("Ternary: #{if age >= 18, do: "You can vote and drive", else: "You can't vote and drive"}")
 
 
-    my_stats = {175, 6.25, :Derek}
-    IO.puts("Tuple: #{is_tuple(my_stats)}")
+    # my_stats = {175, 6.25, :Derek}
+    # IO.puts("Tuple: #{is_tuple(my_stats)}")
 
-    my_stats2 = Tuple.append(my_stats, :amsterdem)
+    # my_stats2 = Tuple.append(my_stats, :amsterdem)
+
+
+    # # profile = {nodejs:5, ruby:4, python:3}
+    # # profile[:nodejs] = 6
+
+    # develop = :"Tinr"
+    # y = "Welcm #{develop}"
+    # IO.puts(y)
+    # Enum.chunk_by(["one", "two", "three", "four", "five", 'six'], fn(x) |> String.length(x)
+
+    # [var_1, _unce, var_2] = [{"af"}, f, 3]
+    # IO.puts("#{var_1} #{var_2}")
+
+    # ex = [{:nodejs,5}, {:reactjs,3}]
+    # ex_2 = [nodejs:5, reactjs:3]
+    # IO.puts(ex==ex_2)
+    # IO.puts("nodejs"=~/nodejs|REac/)
+
+
+
+
+
+
+
 
   end
+
 end
